@@ -1,0 +1,35 @@
+.NavbarContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.NavbarLinks {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+.LinksItem {
+  padding: 0 20px;
+  font-weight: 500;
+}
+
+.NavbarBTN {
+  display: flex;
+  justify-content: space-between;
+}
+.LogIn {
+  border: none;
+  background-color: #f5f7fa;
+  color: #4caf4f;
+  padding: 10px 15px;
+  margin-right: 5px;
+}
+.SignUp {
+  border: none;
+  background-color: #4caf4f;
+  color: #fff;
+  padding: 6px 25px;
+  border-radius: 5px;
+}
