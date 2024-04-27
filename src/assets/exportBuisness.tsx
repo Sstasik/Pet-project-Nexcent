@@ -35,18 +35,22 @@ const ExportBuisness = () => {
     },
   ];
   return (
-    <div className="flex flex-wrap max-w-[400px]">
+    <div className="flex flex-wrap max-w-[400px] phone:max-w-[300px]">
       {Info.map((cart) => (
         <div key={cart.id} className="w-[50%] h-[50%] p-[10px]">
           <div className="flex flex-row gap-[20px]" key={cart.id}>
             <div>
-              <img className="size-[50px]" src={cart.svg} alt={cart.alt} />
+              <img
+                className="size-[50px] phone:size-[30px]"
+                src={cart.svg}
+                alt={cart.alt}
+              />
             </div>
             <div>
-              <h2 className="font-bold text-[#4D4D4D] text-2xl">
+              <h2 className="font-bold text-[#4D4D4D] text-2xl phone:text-sm">
                 {cart.count}
               </h2>
-              <p className="text-[#717171] text-l">{cart.desc}</p>
+              <p className="text-[#717171] text-l phone:text-xs">{cart.desc}</p>
             </div>
           </div>
         </div>

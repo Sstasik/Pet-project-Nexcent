@@ -24,7 +24,7 @@ const ExportTeslaItems = () => {
     return <img src={logo} alt={alt} />;
   };
   return (
-    <div className="flex flex-row gap-[40px] py-[20px] items-center ">
+    <div className="flex flex-row gap-[40px] py-[20px] items-center phone:flex-wrap phone:justify-center">
       {LogoArray.map((logo, index) => (
         <LogosShow key={index} logo={logo} alt={`Logo${index + 1}`} />
       ))}

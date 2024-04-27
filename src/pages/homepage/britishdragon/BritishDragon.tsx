@@ -3,13 +3,13 @@ import TeslaImg from '../../../assets/imgs/teslaImg.png';
 import ExportTeslaItems from '../../../assets/exportTeslaItems';
 function BritishDragon() {
   return (
-    <div className="flex felx-row justify-center items-center py-[20px]">
-      <div className="pr-[50px]">
+    <div className="flex felx-row justify-center items-center py-[20px] phone:flex-col">
+      <div className="pr-[50px] phone:p-0">
         <img src={TeslaImg} alt="TeslaImg" />
       </div>
-      <div className="max-w-[720px] flex flex-col justify-start">
+      <div className="max-w-[720px] flex flex-col justify-start phone:items-center">
         <div>
-          <p className="text-[#717171] text-l pb-[8px]">
+          <p className="text-[#717171] text-l pb-[8px] phone:text-sm phone:max-w-[300px]">
             Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
             lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu
             enim metus. Vivamus sed libero ornare, tristique quam in, gravida

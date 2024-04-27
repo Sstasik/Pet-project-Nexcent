@@ -1,25 +1,35 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { login } from '../store/userSlice';
+import { useAppDispatch } from '../hooks/hooks';
 
 interface LoginProps {
   isOpen: boolean;
   onClose: () => void;
 }
 const Login: React.FC<LoginProps> = ({ isOpen, onClose }) => {
-  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-
+  const navigate = useNavigate();
+  const dispatch = useAppDispatch();
   if (!isOpen) return null;
 
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    console.log('login', { email, password });
 
-    if (!username || !password) {
+    dispatch(login({ email, password })).then((action) => {
+      localStorage.setItem('accessToken', action.payload.token);
+      navigate('/');
+      onClose();
+    });
+
+    if (!email || !password) {
       alert('Fill all fields');
       return;
     }
-    alert(`Login sucess ! \nHello ${username}`);
-    onClose();
-    setUsername('');
+
+    setEmail('');
     setPassword('');
   };
 
@@ -35,13 +45,13 @@ const Login: React.FC<LoginProps> = ({ isOpen, onClose }) => {
         onSubmit={onSubmit}>
         <div className="flex justify-center items-center flex-col">
           <h1 className="text-3xl mb-[10px]">Login</h1>
-          <label htmlFor="username">Username</label>
+          <label htmlFor="email">email</label>
           <input
-            id="username"
+            id="email"
             type="text"
-            placeholder="Enter username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            placeholder="Enter email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             required
             className="mb-4 p-1 rounded-md outline-0"
           />
@@ -58,7 +68,7 @@ const Login: React.FC<LoginProps> = ({ isOpen, onClose }) => {
         </div>
         <div className="flex justify-evenly">
           <button onClick={onClose}>Close</button>
-          <button type="submit">Submit</button>
+          <button type="submit">Login</button>
         </div>
       </form>
     </div>

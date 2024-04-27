@@ -1,24 +1,49 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { register } from '../store/userSlice';
+import { useNavigate } from 'react-router-dom';
+import { useAppDispatch } from '../hooks/hooks';
 
 interface RegistrProps {
   isOpen: boolean;
   onClose: () => void;
 }
+
+// interface IRegisterArguments {
+//   email: string;
+//   username: string;
+//   password: string;
+// }
+
 const Registration: React.FC<RegistrProps> = ({ isOpen, onClose }) => {
   const [password, setPassword] = useState('');
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
+  const navigate = useNavigate();
+
+  const dispatch = useAppDispatch();
 
   if (!isOpen) return null;
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    console.log('register', { email, username, password });
+
+    dispatch(register({ email, username, password })).then((action: any) => {
+      localStorage.setItem('accessToken', action.payload.token);
+      navigate('/');
+      onClose();
+    });
+    // let userCredentials = {
+    //   username,
+    //   password,
+    //   email,
+    // };
 
     if (!username || !email || !password) {
       alert('Fill all fields');
       return;
     }
-    alert(`Create succes ! \nWelcome ${username}`);
-    onClose();
+
     setUsername('');
     setEmail('');
     setPassword('');
@@ -67,7 +92,7 @@ const Registration: React.FC<RegistrProps> = ({ isOpen, onClose }) => {
         </div>
         <div className="flex justify-evenly">
           <button onClick={onClose}>Close</button>
-          <button type="submit">Submit</button>
+          <button type="submit">Register</button>
         </div>
       </form>
     </div>

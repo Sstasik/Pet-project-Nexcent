@@ -20,7 +20,7 @@ const ExportImgs = () => {
   };
 
   return (
-    <div className="flex flex-row justify-evenly p-[20px]">
+    <div className="flex flex-row justify-evenly p-[20px] phone:flex-wrap">
       {LogoArray.map((logo, index) => (
         <LogosShow key={index} logo={logo} alt={`Logo${index + 1}`} />
       ))}

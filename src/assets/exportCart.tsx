@@ -29,7 +29,7 @@ const Carts = [
 
 const ExportCart = () => {
   return (
-    <div className="flex flex-row justify-evenly py-[30px]">
+    <div className="flex flex-row justify-evenly py-[30px] phone:flex-col phone:items-center">
       {Carts.map((cart) => (
         <div
           key={cart.id}

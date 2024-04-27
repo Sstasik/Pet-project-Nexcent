@@ -2,13 +2,13 @@ import React from 'react';
 import PhoneImg from '../../../assets/imgs/phone.png';
 function HowToDesignSite() {
   return (
-    <div className="flex flex-row items-center justify-center gap-[70px] py-[50px]">
+    <div className="flex flex-row items-center justify-center gap-[70px] py-[50px] phone:flex-col">
       <div>
         <img src={PhoneImg} alt="PhoneImg" />
       </div>
-      <div className="max-w-[600px]">
+      <div className="max-w-[600px] phone:max-w-[300px]">
         <div className="">
-          <h1 className="text-4xl font-semibold text-[#717171]">
+          <h1 className="text-4xl font-semibold text-[#717171] phone:text-2xl">
             How to design your site footer like we did
           </h1>
           <p className="text-[#727272] py-[25px] max-w-[550px] text-sm">
@@ -23,7 +23,7 @@ function HowToDesignSite() {
             gravida.
           </p>
         </div>
-        <button className="bg-[#4CAF4F] text-[#fff] px-[20px] py-[10px] rounded-[5px]">
+        <button className="bg-[#4CAF4F] text-[#fff] px-[20px] py-[10px] rounded-[5px] phone:p-[10px] phone:text-sm">
           Learn More
         </button>
       </div>

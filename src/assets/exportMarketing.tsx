@@ -26,7 +26,7 @@ const ExportMarketing = () => {
   ];
   return (
     <div>
-      <div className="flex flex-row justify-center gap-[30px]">
+      <div className="flex flex-row justify-center gap-[30px] phone:flex-col phone:items-center">
         {Cards.map((card) => (
           <div key={card.id} className="relative">
             <div className="z-[0]">

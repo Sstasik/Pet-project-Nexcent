@@ -4,10 +4,10 @@ import WhiteLogo from '../assets/imgs/WhiteLogo.png';
 import ExportFolow from '../assets/exportFolow';
 function Footer() {
   return (
-    <div className="text-[#FFF] flex flex-row justify-center py-[60px] gap-[350px] bg-[#263238]">
-      <div className="flex flex-col gap-[40px]">
+    <div className="text-[#FFF] flex flex-row justify-center py-[60px] gap-[250px] bg-[#263238] phone:gap-[10px]">
+      <div className="flex flex-col gap-[40px] ">
         <img src={WhiteLogo} alt="NexcentLogo" />
-        <div className="text-[#F5F7FA] text ">
+        <div className="text-[#F5F7FA] phone:text-sm">
           <p>Copyright © 2020 Nexcent ltd.</p>
           <p>All rights reserved</p>
         </div>
@@ -16,10 +16,10 @@ function Footer() {
         </div>
       </div>
 
-      <div className="flex flex-row gap-[100px]">
+      <div className="flex flex-row gap-[100px] phone:gap-[20px]">
         <div>
-          <h1 className="text-xl mb-[20px]">Company</h1>
-          <ul className="flex flex-col gap-[15px] text-[#D9DBE1]">
+          <h1 className="text-xl mb-[20px] phone:text-sm">Company</h1>
+          <ul className="flex flex-col gap-[15px] text-[#D9DBE1] phone:gap-[8px] phone:text-xs">
             <li>About us</li>
             <li>Blog</li>
             <li>Contact us</li>
@@ -28,8 +28,8 @@ function Footer() {
           </ul>
         </div>
         <div>
-          <h1 className="text-xl mb-[20px]">Support</h1>
-          <ul className="flex flex-col gap-[15px] text-[#D9DBE1]">
+          <h1 className="ext-xl mb-[20px] phone:text-sm">Support</h1>
+          <ul className="flex flex-col gap-[15px] text-[#D9DBE1] phone:gap-[8px] phone:text-xs">
             <li>Help center</li>
             <li>Terms of service</li>
             <li>Legal</li>
@@ -38,10 +38,10 @@ function Footer() {
           </ul>
         </div>
         <div>
-          <h1 className="text-xl mb-[30px]">Stay up to date</h1>
+          <h1 className="text-xl mb-[30px] phone:text-sm">Stay up to date</h1>
           <div className=" flex flex-row justify-center bg-gray-600 items-center px-[10px] py-[5px] rounded-lg">
             <input
-              className="text-[#D9DBE1] bg-gray-600 outline-none"
+              className="text-[#D9DBE1] bg-gray-600 outline-none phone:text-xs phone:max-w-[0px]"
               type="text"
               placeholder="Your email address"
             />
