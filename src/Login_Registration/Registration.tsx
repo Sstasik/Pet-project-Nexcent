@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
+
 import { register } from '../store/userSlice';
 import { useNavigate } from 'react-router-dom';
 import { useAppDispatch } from '../hooks/hooks';

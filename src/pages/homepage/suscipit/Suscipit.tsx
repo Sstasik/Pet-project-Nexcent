@@ -1,4 +1,3 @@
-import React from 'react';
 import RightArrowWhite from '../../../assets/icons/RightArrowWhite.svg';
 function Suscipit() {
   return (

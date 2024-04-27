@@ -1,4 +1,3 @@
-import React from 'react';
 import Logo1 from './icons/Logo1.svg';
 import Logo2 from './icons/Logo2.svg';
 import Logo3 from './icons/Logo3.svg';

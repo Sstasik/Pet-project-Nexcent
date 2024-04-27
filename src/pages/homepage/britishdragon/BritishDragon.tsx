@@ -1,4 +1,3 @@
-import React from 'react';
 import TeslaImg from '../../../assets/imgs/teslaImg.png';
 import ExportTeslaItems from '../../../assets/exportTeslaItems';
 function BritishDragon() {

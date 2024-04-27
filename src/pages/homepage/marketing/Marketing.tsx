@@ -1,4 +1,3 @@
-import React from 'react';
 import ExportMarketing from '../../../assets/exportMarketing';
 
 const Marketing = () => {

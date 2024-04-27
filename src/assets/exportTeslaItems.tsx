@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import PurpleLogo from './icons/PurpleLogo.svg';
 import Logo2 from './icons/Logo2.svg';
 import Logo3 from './icons/Logo3.svg';

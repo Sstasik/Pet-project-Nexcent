@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import HeaderImg from '../../../assets/imgs/Illustration.png';
 import Registration from '../../../Login_Registration/Registration';
 const Header = () => {

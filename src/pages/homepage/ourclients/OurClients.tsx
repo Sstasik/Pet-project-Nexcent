@@ -1,4 +1,3 @@
-import React from 'react';
 import ExportImgs from '../../../assets/exportImgs';
 
 const OurClients = () => {

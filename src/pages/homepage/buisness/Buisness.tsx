@@ -1,4 +1,3 @@
-import React from 'react';
 import ExportBuisness from '../../../assets/exportBuisness';
 
 const Buisness = () => {

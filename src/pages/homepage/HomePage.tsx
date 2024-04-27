@@ -1,4 +1,3 @@
-import React from 'react';
 import Header from './header_page/Header';
 import OurClients from './ourclients/OurClients';
 import Comunity from './comunity/Comunity';

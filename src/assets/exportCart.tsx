@@ -1,4 +1,3 @@
-import React from 'react';
 import PeopleIcon from './icons/peopleicon.svg';
 import HandsIcon from './icons/handsicon.svg';
 import HouseIcon from './icons/houseicon.svg';

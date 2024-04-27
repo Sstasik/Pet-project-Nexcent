@@ -1,4 +1,3 @@
-import React from 'react';
 import MemberIcon from './icons/membersIcon.svg';
 import PaymentIcon from './icons/paymentIcon.svg';
 import EventIcon from './icons/eventIcon.svg';

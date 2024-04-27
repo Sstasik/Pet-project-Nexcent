@@ -1,4 +1,3 @@
-import React from 'react';
 import Frame35 from '../../../assets/imgs/Frame35.png';
 const Pixelgrade = () => {
   return (

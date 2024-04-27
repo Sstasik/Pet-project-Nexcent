@@ -1,4 +1,3 @@
-import React from 'react';
 import ExportCart from '../../../assets/exportCart';
 
 const Comunity = () => {

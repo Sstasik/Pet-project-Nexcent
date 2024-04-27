@@ -1,4 +1,3 @@
-import React from 'react';
 import sendImg from '../assets/imgs/send.png';
 import WhiteLogo from '../assets/imgs/WhiteLogo.png';
 import ExportFolow from '../assets/exportFolow';

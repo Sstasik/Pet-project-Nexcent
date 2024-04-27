@@ -1,4 +1,3 @@
-import React from 'react';
 import PhoneImg from '../../../assets/imgs/phone.png';
 function HowToDesignSite() {
   return (
