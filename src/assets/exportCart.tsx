@@ -28,11 +28,11 @@ const Carts = [
 
 const ExportCart = () => {
   return (
-    <div className="flex flex-row justify-evenly py-[30px] phone:flex-col phone:items-center">
+    <div className="flex flex-row justify-evenly py-[30px]  phone:flex-col phone:items-center">
       {Carts.map((cart) => (
         <div
           key={cart.id}
-          className="max-w-[350px] shadow-md px-[30px] pb-[30px] pt-[15px] rounded-md">
+          className="max-w-[350px] shadow-md px-[30px] pb-[30px] pt-[15px] rounded-md hover:scale-110 transform transition-transform duration-300">
           <div className="flex flex-col items-center " key={cart.id}>
             <img className="size-[80px]" src={cart.svg} alt={cart.alt} />
             <h2 className="text-3xl font-bold text-center max-w-[200px] py-[10px] text-[#4D4D4D]">

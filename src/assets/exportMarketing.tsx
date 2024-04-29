@@ -31,7 +31,7 @@ const ExportMarketing = () => {
             <div className="z-[0]">
               <img src={card.svg} alt={card.alt} />
             </div>
-            <div className="absolute rounded-xl left-[26px] right-[26px]  bottom-[-70px] bg-[#FFF] shadow-md z-[1] ">
+            <div className="absolute rounded-xl left-[26px] right-[26px]  bottom-[-70px] bg-[#FFF] shadow-md z-[1]  hover:scale-110 transform transition-transform duration-300">
               <div className="flex justify-center text-center">
                 <h1 className="text-[21px] p-[15px] font-semibold text-[#717171]">
                   {card.desc}

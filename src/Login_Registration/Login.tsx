@@ -37,7 +37,7 @@ const Login: React.FC<LoginProps> = ({ isOpen, onClose }) => {
     <div
       className={`fixed top-0 left-0 w-screen h-screen flex justify-center items-center bg-lime-600/35
       }`}>
-      <div className="absolute"></div>
+      <div className="absolute "></div>
       <form
         className={`bg-slate-200 w-96 p-4 rounded-xl ${
           isOpen ? 'animate-slideCenter' : 'animate-slideTop'

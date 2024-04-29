@@ -63,6 +63,7 @@ const Navbar = () => {
             <Link to="/FAQ">FAQ</Link>
           </li>
         </ul>
+
         <button className="hidden phone:inline" onClick={toggleMenu}>
           {' '}
           Burger Menu
